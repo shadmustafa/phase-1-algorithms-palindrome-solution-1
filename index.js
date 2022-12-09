@@ -1,9 +1,29 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function isPalindrome(string) {
+
+  // convert string to an array
+  const arrayValues = string.split('');
+
+  // reverse the array values
+  const reverseArrayValues = arrayValues.reverse();
+
+  // convert array to string
+  const reverseString = reverseArrayValues.join('');
+
+  if(string == reverseString) {
+      return true
+  }
+  else {
+      return false
+  }
 }
 
 /* 
   Add your pseudocode here
+  1-take whole word
+  2-split whole word to pieces so you can use word by word
+  3-reverse the chars u splited 
+  4-put the reversed chars together 
+  5-make a condition to see if main word is equal too reversed word if true its palindrome if not its not palindrome
 */
 
 /*
